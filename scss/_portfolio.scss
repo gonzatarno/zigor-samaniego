@@ -1,0 +1,342 @@
+@import "variables";
+
+
+.portfolio-contenedor {
+    @extend %fondo;
+
+    .portfolio-contenedor__imagen {
+        @extend %ancho-base;
+
+        .portfolio-contenedor__titulo {
+            text-align: right;
+            font-weight: 800;
+            padding: 150px 0px 30px;
+        
+            @media only screen and (max-width: 1202px) {
+                padding: 150px 15px 10px;
+            }
+        
+            @media only screen and (max-width: 872px) {
+                text-align: center;
+                padding: 150px 0px 30px;
+                background-color: $color-secundary;
+                color: $color-terciario;
+            }
+        }        
+    }
+}
+
+
+.portfolio-proyecto5 {
+    /*---------Imagen Amigos 5----*/
+    margin: 50px;
+    @include flex(row, center, none);
+    text-align: left;
+
+    span {
+        font-weight: 600;
+    }
+
+    img {
+        height: 300px;
+        width: 450px;
+        margin: 10px;
+
+        
+        @media only screen and (max-width: 600px) {
+            width: 90%;
+            margin: 5%;
+            height: 90%;
+        }
+    }
+
+    @media only screen and (max-width: 1202px) {
+        margin: 5%;
+        justify-content: flex-end;
+    }
+
+    @media only screen and (max-width: 872px) {
+        @include flex(row, center, none,);
+
+        p {
+            padding: 2%;
+        }
+    }
+
+    @media only screen and (max-width: 750px) {
+        @include flex(column, center, flex-end);
+        margin-bottom: 20%;
+    }
+
+    @media only screen and (max-width: 600px) {
+        @include flex(column, center, center);
+    }
+}
+
+.portfolio-dinosaurio {
+    /*---------Imagen Dinosaurio----*/
+    @include flex(row, flex-end, none);
+    text-align: left;
+    padding-top: 10px;
+
+    img {
+        height: 300px;
+        width: 450px;
+        object-fit: cover;
+        border-radius: 8px;
+
+        @media only screen and (max-width: 600px) {
+            width: 90%;
+            margin: 5%;
+            height: 90%;
+        }
+    }
+
+    @media only screen and (max-width: 1202px) {
+        margin: 5%;
+    }
+
+    @media only screen and (max-width: 872px) {
+        @include flex(row, center, none);
+    }
+
+    @media only screen and (max-width: 750px) {
+        @include flex(column, center, none);
+    }
+
+    @media only screen and (max-width: 600px) {
+        @include flex(column, center, center);
+    }
+
+    .portfolio-dinosaurio__texto {
+        display: block;
+        width: 500px;
+        padding-top: 150px;
+    
+        h3 {
+            padding-bottom: 15px;
+            font-weight: 800;
+        }
+    
+        @media only screen and (max-width: 872px) {
+            @include flex(column, center, none);
+            padding-top: 10px;
+            width: 90%;
+    
+            p {
+                padding: 5% 0;
+                width: 80%;
+                text-align: left;
+            }
+    
+            h3 {
+                font-size: 20px;
+                padding-bottom: 5px;
+                text-align: left;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            @include flex(column, center, center);
+            p {
+                padding: 2% 0;
+                text-align: center;
+            }
+    
+            h3 {
+                margin-top: 40px;
+                text-align: center;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.portfolio-proyecto5__texto {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding-top: 150px;
+
+    h3 {
+        padding-bottom: 15px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+    @media only screen and (max-width: 872px) {
+        @include flex(column, center, none);
+        padding-top: 10px;
+        width: 90%;
+
+        p {
+            padding: 5% 0;
+            width: 80%;
+            text-align: left;
+        }
+
+        h3 {
+            font-size: 20px;
+            padding-bottom: 5px;
+            text-align: left;
+        }
+    }
+
+    @media only screen and (max-width: 750px) {
+        p {
+            padding: 2% 0;
+            text-align: right;
+            width: 100%;
+        }
+
+        h3 {
+            margin-top: 40px;
+            text-align: right;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        @include flex(column, center, center);
+        p {
+            padding: 2% 0;
+            text-align: center;
+        }
+
+        h3 {
+            margin-top: 40px;
+            text-align: center;
+            width: 100%;
+        }
+    }
+    
+}
+
+
+.portfolio__img {
+    padding: 40px 0px 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(5, 1fr);
+    grid-row-gap: 25px;
+    grid-template-areas:
+        "render1 render1 render3 render4"
+        "render1 render1 render5 render6"
+        "render7 render8 render9 render10"
+        "render11 render12 render13 render13"
+        "render14 render15 render13 render13";
+
+    @media only screen and (max-width: 1202px) {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 2%;
+    }
+
+    @media only screen and (max-width: 580px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 90vw;
+        }
+    }
+
+    
+    .render-1 {
+        grid-area: render1;
+        place-self: center;
+        border-radius: 5px;
+        width: 570px;
+        height: 430px;
+        object-fit: cover;
+
+        @media only screen and (max-width: 1202px) {
+            width: 280px;
+            height: 200px;
+        }
+
+        @media only screen and (max-width: 580px) {
+                width: 90vw;
+        }
+    }
+
+    .render-3 {
+        grid-area: render3;
+        place-self: center;
+    }
+
+    .render-4 {
+        grid-area: render4;
+        place-self: center;
+    }
+
+    .render-5 {
+        grid-area: render5;
+        place-self: center;
+    }
+
+    .render-6 {
+        grid-area: render6;
+        place-self: center;
+    }
+
+    .render-7 {
+        grid-area: render7;
+        place-self: center;
+    }
+
+    .render-8 {
+        grid-area: render8;
+        place-self: center;
+    }
+
+    .render-9 {
+        grid-area: render9;
+        place-self: center;
+    }
+
+    .render-10 {
+        grid-area: render10;
+        place-self: center;
+    }
+
+    .render-11 {
+        grid-area: render11;
+        place-self: center;
+    }
+
+    .render-12 {
+        grid-area: render12;
+        place-self: center;
+    }
+
+    .render-13 {
+        grid-area: render13;
+        place-self: center;
+        border-radius: 5px;
+        width: 570px;
+        height: 430px;
+        object-fit: cover;
+
+        @media only screen and (max-width: 1202px) {
+            width: 280px;
+            height: 200px;
+        }
+
+        @media only screen and (max-width: 580px) {
+            width: 90vw;
+    }
+    }
+
+    .render-14 {
+        grid-area: render14;
+        place-self: center;
+    }
+
+    .render-15 {
+        grid-area: render15;
+        place-self: center;
+    }
+}

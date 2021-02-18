@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 27px;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+//-------HEADER
+
+header {
+    height: 100px;
+    background-color: white;
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+
+    @media only screen and (max-width: 872px){
+        offset: 1;
+    }
+}
+
+
+.container-fluid-nav {
+    @extend %ancho-base;
+    width: 100%;
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding: 5px 0;
+    display: flex;
+    flex-wrap: inherit;
+    justify-content: space-evenly;
+
+    @media only screen and (max-width: 1201px){
+        margin: 0px 5% 0px 5%;
+    }
+}
+
+
+//------FOOTER
+
+footer {
+    background-image: url("../imagenes/fondo_footer.png")
+}
+
+footer {
+    background-size: cover;
+
+    span {
+        font-weight: normal;
+        text-transform: initial;
+    }
+}
+
+
+.footer-contenedor {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+
+    p{
+        color: white;
+        font-size: 12px;
+        margin: 10px 0;
+        width: 60%;
+        max-width: 1200px;
+        font-weight: normal;
+    }
+
+    @media only screen and (max-width: 872px){
+        p{
+            width: 80%;
+        }
+    }
+}
+
+
+.footer__titulo {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+
+// ----REUTILIZABLES
+
+
+.redes-iconos {
+    
+    li{
+        list-style: none;
+        display: inline-block;
+        margin-left: 5px;
+        margin: auto;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+    }
+}
+
+.boton {
+    background-color:$color-primary;
+    color: white;
+    padding: 15px 20px 15px 20px;
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    outline: none;
+    width: 200px;
+    margin: 15px;
+
+    &:hover {
+        background-color:$color-secundary;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+
+.boton--margin {
+    margin: 15px 0px;
+}
+
+
+//---MODAL
+.navbar-form {
+    width: 100%;
+    border: 1px solid #ced4da;
+    padding: 10px;
+}
+
+.navbar-form__boton {
+    color: #fff;
+    background-color: $color-primary;
+    border-color: $color-primary;
+    border-radius: 20px;
+
+    &:hover {
+        color: $color-primary;
+        background-color: transparent;
+        border-color: $color-primary;
+        border-width: 1px;
+    }
+}

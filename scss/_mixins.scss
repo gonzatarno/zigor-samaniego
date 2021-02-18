@@ -1,0 +1,25 @@
+@mixin articulos ($color, $escala) {
+    width: 300px;
+    height: 330px;
+    transition: all 1s;
+    box-shadow: $sombra-cajas;
+    background-color: $color;
+    border-radius: 10px;
+    padding: 30px 5px;
+    margin-bottom: 60px;
+    transform: scale($escala);
+
+    p{
+        padding: 5px;
+    }
+}
+
+
+
+@mixin flex ($fd, $jc, $ai) {
+display: flex;
+flex-direction: $fd;
+justify-content: $jc;
+align-items: $ai;
+}
+

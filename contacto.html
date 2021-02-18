@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.rtl.css">
+        <link rel="stylesheet" href="css/bootstrap-grid.rtl.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+            integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+            crossorigin="anonymous" />
+        <link rel="stylesheet" href="css/estilos.css">
+        <title>Contáctame | Zigor Samaniego</title>
+        <meta name="description" content="Puedes contactarme para poder trabajar juntos o para poder comunicarme sobre otros temas.">
+        <meta name="keywords" content="3d, c4d, octane, render, illustration, ilustrador, publicidad, advertising, design, zigor- samaniego">
+    </head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid-nav">
+                <a href="index.html"><img src="imagenes/logo_zigor.svg" alt="logozigor" class="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre_mi.html">Sobre Mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="el_chivo_peludo.html">El Chivo Peludo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                NEWSLETTER
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- FORMULARIO -->
+    <section class="contacto">
+        <main class="contacto-contenedor">
+            <img src="imagenes/imagen_contacto.jpg" alt="Imagen de contacto" class="contacto__imagen opacidad-imagen">
+            <div class="contacto-contenedor__form">
+                <h1>CONTÁCTAME</h1>
+                <form action="puedequedarvacio" method="get">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label for="texto" class="contacto-form__label">Nombre</label>
+                            <input type="text" name="nombre" placeholder="Gonzalo" class="contacto-form__texto">
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="texto" class="contacto-form__label">Apellido</label>
+                            <input type="text" name="apellido" placeholder="Tarnofsky" class="contacto-form__texto">
+                        </div>
+                    </div>
+                    <label for="email" class="contacto-form__label">Email</label>
+                    <input type="email" name="email" placeholder="nombre@mail.com" class="contacto-form__texto">
+                    <label for="texto" class="contacto-form__label">Mensaje</label>
+                    <textarea class="contacto-form__texto" cols="20" rows="5"></textarea>
+                
+                    <!-- NEWSLETTER -->
+                    <div class="newsletter__switch">
+                        <div class="form-check form-switch">
+                            <label class="form-check-label newsletter__text" for="flexSwitchCheckDefault">¿Desea recibir el Newsletter?</label>
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                        </div>
+                    </div>
+
+                    <!-- OPCIONES -->
+                    <select name="" class="area-contacto">
+                        <option value="renders_3d">Renders 3D</option>
+                        <option value="el_chivo_peludo" class="contacto-option">El Chivo Peludo</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </form>
+                <!-- BOTÓN -->
+                <button class="boton--contacto" type="submit" value="Enviar">Enviar</button>
+            </div>    
+        </main>
+    </section>
+
+    <!-- Modal -->
+    <div div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Newsletter</h5>
+                </div>
+                <div class="modal-body">
+                    ¿Deseas suscribirte al Newsletter para enterarte de los últimos proyectos de Zigor?
+                    <div class="input-group flex-nowrap">
+                        <input type="email" name="email" placeholder="Ingresa tu email" class="navbar-form">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button class="btn navbar-form__boton" type="submit" value="Enviar">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <div class="footer-contenedor">
+            <h4 class="footer__titulo"> <span>Copyright 2020</span> Zigor Samaniego</h4>
+            <p>Todos los textos, fotos, ilustraciones y otros elementos contenidos en esta página están protegidos por ley, de acuerdo con lo dispuesto en el Código de los Derechos de Autor y de los Derechos Conexos, siendo expresamente prohibida su copia, reproducción y difusión, así como su utilización comercial, sin autorización expresa de ZIGOR SAMANIEGO, cualesquiera que sean los medios utilizados para ese efecto, excepto el derecho de citación definido en la ley.</p>
+            <ul class="redes-iconos">
+                <li><a href="https://www.behance.net/zigor" target="_blank"><img src="imagenes/behance.svg" alt="behance" width="45" height="28"></a></li>
+                <li><a href="https://www.linkedin.com/in/zigor-samaniego-91043016/" target="_blank"><img src="imagenes/linkedin.svg" alt="linkedin" width="28" height="28"></a></li>
+                <li><a href="https://www.instagram.com/zigor/" target="_blank"><img src="imagenes/instagram.svg" alt="instagram" width="28" height="28"></a></li>
+                <li><a href="https://dribbble.com/zigor" target="_blank"><img src="imagenes/dribbble.svg" alt="dribbble" width="28" height="28"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    
+</body>
+</html>
