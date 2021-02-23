@@ -34,6 +34,7 @@ header {
     @media only screen and (max-width: 872px){
         offset: 1;
     }
+
 }
 
 
@@ -49,6 +50,19 @@ header {
 
     @media only screen and (max-width: 1201px){
         margin: 0px 5% 0px 5%;
+    }
+
+}
+
+.navbar-nav {
+    @media only screen and (max-width: 1050px){
+        padding: 5%;
+    }
+}
+
+.nav-link {
+    @media only screen and (max-width: 1050px){
+        padding: 2%;
     }
 }
 
