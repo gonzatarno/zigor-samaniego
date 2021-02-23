@@ -34,9 +34,10 @@
 
         @media only screen and (max-width: 800px) {
             flex-direction: column;
-            background-color: $color-secundary;
+            background-image: url("../imagenes/fondo_footer.png");
             color: $color-terciario;
             padding: 2%;
+            margin-bottom: 100px;
         }
 
         .sobremi-contenedor__imagen{
@@ -111,7 +112,7 @@
     @extend %ancho-base;
     @include flex(none, flex-end, none);
     text-align: left;
-    margin-top: 100px;
+    margin: 150px 0;
 
     @media only screen and (max-width: 1000px) {
                 

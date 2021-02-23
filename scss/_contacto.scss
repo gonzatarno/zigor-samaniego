@@ -2,6 +2,7 @@
 
 .contacto {
     @extend %fondo;
+    background-image: url("../imagenes/fondo_pagina_alternativo.jpg");
 
     .contacto-contenedor {
         display: flex;
@@ -25,9 +26,7 @@
         }
 
         @media screen and (max-width:600px) {
-            background-color: $color-secundary;
             width: 100%;
-            color: $color-terciario;
         }
 
         .contacto-contenedor__form {
