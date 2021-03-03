@@ -509,6 +509,7 @@ footer span {
 
   .inicio-entrevista a {
     padding: 20px 0 0 10%;
+    color: #ebebeb;
   }
 }
 
@@ -1185,6 +1186,7 @@ footer span {
 @media only screen and (max-width: 580px) {
   .portfolio__img .render-1 {
     width: 90vw;
+    margin-bottom: 15px;
   }
 }
 
@@ -1193,9 +1195,21 @@ footer span {
   place-self: center;
 }
 
+@media only screen and (max-width: 580px) {
+  .portfolio__img .render-3 {
+    margin-bottom: 15px;
+  }
+}
+
 .portfolio__img .render-4 {
   grid-area: render4;
   place-self: center;
+}
+
+@media only screen and (max-width: 580px) {
+  .portfolio__img .render-4 {
+    margin-bottom: 15px;
+  }
 }
 
 .portfolio__img .render-5 {
@@ -1203,9 +1217,21 @@ footer span {
   place-self: center;
 }
 
+@media only screen and (max-width: 580px) {
+  .portfolio__img .render-5 {
+    margin-bottom: 15px;
+  }
+}
+
 .portfolio__img .render-6 {
   grid-area: render6;
   place-self: center;
+}
+
+@media only screen and (max-width: 580px) {
+  .portfolio__img .render-6 {
+    margin-bottom: 15px;
+  }
 }
 
 .portfolio__img .render-7 {
@@ -1213,9 +1239,21 @@ footer span {
   place-self: center;
 }
 
+@media only screen and (max-width: 580px) {
+  .portfolio__img .render-7 {
+    margin-bottom: 15px;
+  }
+}
+
 .portfolio__img .render-8 {
   grid-area: render8;
   place-self: center;
+}
+
+@media only screen and (max-width: 580px) {
+  .portfolio__img .render-8 {
+    margin-bottom: 15px;
+  }
 }
 
 .portfolio__img .render-9 {
@@ -1223,9 +1261,21 @@ footer span {
   place-self: center;
 }
 
+@media only screen and (max-width: 580px) {
+  .portfolio__img .render-9 {
+    margin-bottom: 15px;
+  }
+}
+
 .portfolio__img .render-10 {
   grid-area: render10;
   place-self: center;
+}
+
+@media only screen and (max-width: 580px) {
+  .portfolio__img .render-10 {
+    margin-bottom: 15px;
+  }
 }
 
 .portfolio__img .render-11 {
@@ -1233,9 +1283,21 @@ footer span {
   place-self: center;
 }
 
+@media only screen and (max-width: 580px) {
+  .portfolio__img .render-11 {
+    margin-bottom: 15px;
+  }
+}
+
 .portfolio__img .render-12 {
   grid-area: render12;
   place-self: center;
+}
+
+@media only screen and (max-width: 580px) {
+  .portfolio__img .render-12 {
+    margin-bottom: 15px;
+  }
 }
 
 .portfolio__img .render-13 {
@@ -1257,6 +1319,7 @@ footer span {
 @media only screen and (max-width: 580px) {
   .portfolio__img .render-13 {
     width: 90vw;
+    margin-bottom: 15px;
   }
 }
 
@@ -1265,9 +1328,21 @@ footer span {
   place-self: center;
 }
 
+@media only screen and (max-width: 580px) {
+  .portfolio__img .render-14 {
+    margin-bottom: 15px;
+  }
+}
+
 .portfolio__img .render-15 {
   grid-area: render15;
   place-self: center;
+}
+
+@media only screen and (max-width: 580px) {
+  .portfolio__img .render-15 {
+    margin-bottom: 15px;
+  }
 }
 
 .elchivo__imagen {

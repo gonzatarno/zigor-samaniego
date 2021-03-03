@@ -97,10 +97,11 @@
     border: 3px solid #3b3a3a;
     border-radius: 50%;
 
-
     @media only screen and (max-width: 872px) {
         display: none;
     }
+
+    
 }
 
 .scroll__boton::before, 
@@ -261,6 +262,7 @@
 
         a {
             padding: 20px 0 0 10%;
+            color: rgb(235, 235, 235);
         }
     }
 
