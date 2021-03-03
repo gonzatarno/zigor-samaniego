@@ -90,23 +90,64 @@
 /*----Boton*/
 .scroll__boton {
     position: absolute;
+    height: 35px;
+    width: 35px;
     top: 570px;
     left: 49%;
+    border: 3px solid #3b3a3a;
+    border-radius: 50%;
 
-    li {
-        list-style-type: none;
-    }
 
     @media only screen and (max-width: 872px) {
         display: none;
     }
 }
 
+.scroll__boton::before, 
+.scroll__boton::after{
+        content: '';
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        border: 3px solid #3b3a3a;
+        height: 10px;
+        width: 10px;
+        transform: translate(-50%, -100%) rotate(45deg);
+        border-top: transparent;
+        border-left: transparent;
+        border-radius: 2px;
+        animation: scroll__boton 1s ease-in-out infinite;
+    }
 
+    .scroll__boton::after {
+        top: 30%;
+        animation-delay: .3s;
+    }
+        
+
+    @keyframes scroll__boton {
+        0%{
+            opacity: 0;
+        }
+
+        30%{
+            opacity: 1;
+        }
+
+        60%{
+            opacity: 1;
+        }
+
+        100%{
+            opacity: 0;
+            top: 90%
+        }
+    }
 
 #articulos {
     display: block;
     @extend %ancho-base;
+    padding-top: 140px;
 
     .articulos-contenedor {
         @include flex(row, space-evenly, center);
