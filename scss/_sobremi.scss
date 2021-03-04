@@ -110,7 +110,7 @@
 .entrevista {
     /*---------Entrevista----*/
     @extend %ancho-base;
-    @include flex(none, flex-end, center);
+    @include flex(none, flex-end, none);
     text-align: left;
     margin-top: 150px;
     margin-bottom: 150px;

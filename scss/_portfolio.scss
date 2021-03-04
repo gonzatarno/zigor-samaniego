@@ -252,6 +252,7 @@
         width: 570px;
         height: 430px;
         object-fit: cover;
+        transition: all 1s;
 
         @media only screen and (max-width: 1202px) {
             width: 280px;
@@ -262,94 +263,149 @@
                 width: 90vw;
                 margin-bottom: 15px;
         }
+
+        &:hover {
+            transform: scale(1.05);
+        }
     }
 
     .render-3 {
         grid-area: render3;
         place-self: center;
+        transition: all 1s;
+
         @media only screen and (max-width: 580px) {
             margin-bottom: 15px;
+    }
+
+    &:hover {
+        transform: scale(1.1);
     }
     }
 
     .render-4 {
         grid-area: render4;
         place-self: center;
+        transition: all 1s;
 
         @media only screen and (max-width: 580px) {
             margin-bottom: 15px;
+    }
+
+    &:hover {
+        transform: scale(1.1);
     }
     }
 
     .render-5 {
         grid-area: render5;
         place-self: center;
+        transition: all 1s;
 
         @media only screen and (max-width: 580px) {
             margin-bottom: 15px;
+    }
+
+    &:hover {
+        transform: scale(1.1);
     }
     }
 
     .render-6 {
         grid-area: render6;
         place-self: center;
+        transition: all 1s;
 
         @media only screen and (max-width: 580px) {
             margin-bottom: 15px;
+    }
+
+    &:hover {
+        transform: scale(1.1);
     }
     }
 
     .render-7 {
         grid-area: render7;
         place-self: center;
+        transition: all 1s;
 
         @media only screen and (max-width: 580px) {
             margin-bottom: 15px;
+    }
+
+    &:hover {
+        transform: scale(1.1);
     }
     }
 
     .render-8 {
         grid-area: render8;
         place-self: center;
+        transition: all 1s;
 
         @media only screen and (max-width: 580px) {
             margin-bottom: 15px;
+    }
+
+    &:hover {
+        transform: scale(1.1);
     }
     }
 
     .render-9 {
         grid-area: render9;
         place-self: center;
+        transition: all 1s;
 
         @media only screen and (max-width: 580px) {
             margin-bottom: 15px;
+    }
+
+    &:hover {
+        transform: scale(1.1);
     }
     }
 
     .render-10 {
         grid-area: render10;
         place-self: center;
+        transition: all 1s;
 
         @media only screen and (max-width: 580px) {
             margin-bottom: 15px;
+    }
+
+    &:hover {
+        transform: scale(1.1);
     }
     }
 
     .render-11 {
         grid-area: render11;
         place-self: center;
+        transition: all 1s;
 
         @media only screen and (max-width: 580px) {
             margin-bottom: 15px;
+    }
+
+    &:hover {
+        transform: scale(1.1);
     }
     }
 
     .render-12 {
         grid-area: render12;
         place-self: center;
+        transition: all 1s;
 
         @media only screen and (max-width: 580px) {
             margin-bottom: 15px;
+    }
+
+    &:hover {
+        transform: scale(1.1);
     }
     }
 
@@ -360,6 +416,7 @@
         width: 570px;
         height: 430px;
         object-fit: cover;
+        transition: all 1s;
 
         @media only screen and (max-width: 1202px) {
             width: 280px;
@@ -370,23 +427,37 @@
             width: 90vw;
             margin-bottom: 15px;
     }
+
+    &:hover {
+        transform: scale(1.05);
+    }
     }
 
     .render-14 {
         grid-area: render14;
         place-self: center;
+        transition: all 1s;
 
         @media only screen and (max-width: 580px) {
             margin-bottom: 15px;
+    }
+
+    &:hover {
+        transform: scale(1.1);
     }
     }
 
     .render-15 {
         grid-area: render15;
         place-self: center;
+        transition: all 1s;
 
         @media only screen and (max-width: 580px) {
             margin-bottom: 15px;
+    }
+
+    &:hover {
+        transform: scale(1.1);
     }
     }
 }
